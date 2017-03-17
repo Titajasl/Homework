@@ -3,14 +3,14 @@ age = int(input('Введите ваш возраст: '))
 if age < 7:
 	print('Вы посещаете детский сад.')
 
-elif 7 <= age <= 18:
+elif age <= 18:
 	print('Вы учитесь в школе.')
 
-elif 18 < age <= 24: 
+elif age <= 24: 
 	print('Скорее всего, вы учитесь в ВУЗе.')
 
-elif 24 < age <= 60:
+elif age < 60:
 	print('Вы уже работаете.')
 
-elif age > 60:
+else:
 	print('Вы уже на пенсии.')

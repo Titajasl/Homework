@@ -1,9 +1,14 @@
+# Написать функцию, которая принимает на вход 2 строки.
+# Если строки одинаковые, возвращает 1.
+# Если строки разные и первая длиннее, возвращает 2.
+# Если строки разные и вторая строка 'learn', возвращает 3.
+
 def string_comparison(string_1, string_2):
 
     if string_1 == string_2:
         return 1
 
-    elif string_1 != string_2:
+    else:
         
         if len(string_1) > len(string_2):
             return 2

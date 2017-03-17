@@ -33,15 +33,9 @@ print('Средний балл по школе: ', round(school_average))
 print('\n')
     
     
-    # Вычислим средние баллы по классам
-for note in scores_list:
-    school_class = note.get('school_class')
-    scores = note.get('scores')
-    summ = 0
-    
-    for score in scores:
-        summ = summ + score
+    # Cредние баллы по классам
+for index in range(len(scores_list) - 1):
+    school_class = scores_list[index]['school_class']
+    class_average = average_list[index]
 
-    class_average = summ / len(scores)    # средний балл по классу
-
-    print('Средний балл по классу {}:'.format(school_class), round(class_average))
+    print('Средний балл в классе {}:'.format(school_class), round(class_average))
